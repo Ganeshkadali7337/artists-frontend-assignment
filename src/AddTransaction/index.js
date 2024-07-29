@@ -59,7 +59,7 @@ class AddTransaction extends Component {
     const { amount, description } = this.state;
     if (!amount || !description) {
       alert("amount and desccription fields are required");
-    } else if (isNaN(amount) || parceINt(amount) < 0) {
+    } else if (isNaN(amount) || parceInt(amount) < 0) {
       alert("please enter valid amount, must be positive integer");
     } else {
       this.setState({ isLoading: true }, this.addTransaction);
